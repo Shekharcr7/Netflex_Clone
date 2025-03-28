@@ -1,0 +1,396 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    height: 100px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    height: 32px;
+    padding: 0 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.b1 {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(211, 208, 208) 1px;
+    border-radius: 3px;
+    background-color: rgb(12, 12, 12);
+    color: rgb(187, 186, 186);
+    font-weight: 600;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.b1:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+}
+
+
+.b2 {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.b2:hover {
+    background-color: #ba151ddc;
+}
+
+.main {
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('assets/images/bg1.jpg') no-repeat center center/cover;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cont {
+    position: relative;
+    z-index: 10;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.one {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.two {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.three {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input input {
+    flex: 1;
+    padding: 15px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+}
+
+.input button {
+    height: auto;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+
+.separation {
+    height: 8px;
+    background-color: #232323;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.first {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.first .matter {
+    width: 25vw;
+    padding-top: 50px;
+}
+
+.m1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.m2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.img,
+.vid {
+    margin: 6rem;
+    position: relative;
+    flex: 1;
+}
+
+.img img,
+.vid img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.img video {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 73%;
+    z-index: 1;
+}
+
+.vid video {
+    position: absolute;
+    top: 8%;
+    left: 17%;
+    width: 63%;
+    z-index: 1;
+}
+
+
+.main5 {
+    padding: 70px 0;
+    background-color: black;
+
+}
+
+.sixteen {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.flex ul {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.flex li {
+    background-color: #303030;
+    margin-bottom: 8px;
+    padding: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.flex li:hover {
+    background-color: #404040;
+}
+
+
+.sym {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.last {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main6 {
+    padding: 50px 10%;
+    background-color: black;
+    color: #757575;
+}
+
+.main6 ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    list-style: none;
+    margin: 30px 0;
+}
+
+.main6 li a {
+    color: #757575;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.main6 li a:hover {
+    text-decoration: underline;
+}
+
+.final {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+@media (max-width: 960px) {
+
+    .img,
+    .vid {
+        margin: 0rem;
+    }
+
+    .first {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .first .matter {
+        padding: 0;
+        margin-bottom: 2rem;
+        width: 80vw;
+        margin: 2rem;
+    }
+
+    .img,
+    .vid {
+        margin: 4rem;
+    }
+
+    .main6 ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main5 {
+        padding: 0px 20px;
+        padding-bottom: 10px;
+    }
+    .sixteen
+    {   padding-top: 10px;
+        font-size: 2rem;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .one {
+        font-size: 2rem;
+    }
+
+    .two,
+    .m1 {
+        font-size: 2rem;
+    }
+
+    .three,
+    .m2 {
+        font-size: 1rem;
+        
+    }
+
+    .input {
+        flex-direction: column;
+    }
+
+    .input button {
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+
+    .end .b1 {
+        display: none;
+    }
+
+    .main6 ul {
+        grid-template-columns: repeat(2, -2fr);
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0 10px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .b1 {
+        width: 90px;
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    .b2 {
+        margin-left: 10px;
+        padding: 0 10px;
+    }
+
+    .sixteen,
+    .m1 {
+        font-size: 1.75rem;
+    }
+
+    .flex li {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+
+    .main6 ul {
+        grid-template-columns: 1fr;
+    }
+}
